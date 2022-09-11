@@ -3,8 +3,8 @@
 AI algorithms will be incorporated into more and more everyday applications. For example, you might want to include an image classifier in a smart phone app. To do this, you'd use a deep learning model trained on hundreds of thousands of images as part of the overall application architecture. A large part of software development in the future will be using these types of models as common parts of applications.
 
 This project is in two phases:
-    1. The first phase was an image classifier built from scratch for identifying different species of flowers using PyTorch. The code for this can be found [here](Image Classifier Project.ipynb)
-    2. The Second is a command line application that presents the model as a python application. The code for this is in the .py files.
+        1. The first phase was an image classifier built from scratch for identifying different species of flowers using PyTorch. The code for this can be found [here](Image Classifier Project.ipynb)
+        2. The Second is a command line application that presents the model as a python application. The code for this is in the .py files.
  
 You can imagine using something like this in a phone app that tells you the name of the flower your camera is looking at. In practice you'd train this classifier, then export it for use in your application.
     
@@ -75,12 +75,12 @@ Access the train.py file and follow the instructions:
 The train.py file trains a network on a set of data and saves the model as a checkpoint.
 To use this file, type the following command line arguments
 
-1. Basic Use: >>python train.py 
-2. Options: 
-    a. To set directory to save checkpoints: >>python train.py --save_dir save_directory
-    b. To choose architecture: >>python train.py --arch "resnet50"
-    c. To set hyperparameters: >>python train.py --learning_rate 0.003 --hidden_units 512 --epochs 2
-    d. To use GPU for training: >>python train.py --gpu
+    1. Basic Use: >>python train.py 
+    2. Options: 
+        a. To set directory to save checkpoints: >>python train.py --save_dir save_directory
+        b. To choose architecture: >>python train.py --arch "resnet50"
+        c. To set hyperparameters: >>python train.py --learning_rate 0.003 --hidden_units 512 --epochs 2
+        d. To use GPU for training: >>python train.py --gpu
     
     
 Next, access the predict.py file and follow the instructions
@@ -89,11 +89,11 @@ The predict.py file predicts flower name from an image along with the probabilit
 
 To use this file, type the following command line arguments
 
-1. Basic Use: >>python predict.py /path/to/image checkpoint where path/to/image can be '/home/workspace/ImageClassifier/flowers/test/10/image_07090.jpg'
-2. Options: 
-    a. To return top K most likely classes:: >>python predict.py --top_k 5
-    b. To Use a mapping of categories to real names: >>python predict.py --category_names cat_to_name.json
-    c. To use GPU for training: >>python predict.py --gpu GPU
+    1. Basic Use: >>python predict.py /path/to/image checkpoint where path/to/image can be '/home/workspace/ImageClassifier/flowers/test/10/image_07090.jpg'
+    2. Options: 
+        a. To return top K most likely classes:: >>python predict.py --top_k 5
+        b. To Use a mapping of categories to real names: >>python predict.py --category_names cat_to_name.json
+        c. To use GPU for training: >>python predict.py --gpu GPU
 
 Tools used: PyTorch, torchvision, PIL, Python,  CNN, 
 
